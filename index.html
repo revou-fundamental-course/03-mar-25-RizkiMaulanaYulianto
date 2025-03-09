@@ -4,25 +4,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Mini Project Rizki</title>
+    <title>Mini Project Rizki</title>
 
     <!-- css -->
      <link rel="stylesheet" href="css/style.css">
     <!-- end css -->
+
+    <!-- script -->
+    <script src="js/script.js"></script>    
+    <!-- end script -->
+
+    <!-- icon title -->
+    <link href="assets/img/logo.jpg" rel="icon">
+    <!-- end icon -->
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- end fontawesome -->
+     
 </head>
 
 <body>
 
 <!-- header -->
- <header></header>
+ <header>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/img/logo.jpg" alt="">
+            <p><a href="index.html">RizProgamming</a></p>
+        </div>
+       <div class="nav-list">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="/#about-section">About</a></li>
+                <li><a href="/#services-section">Services</a></li>
+                <li><a href="/#projects-section">Projects</a></li>
+                <li><a href="/#message-section">Message Us</a></li>
+            </ul>
+       </div>
+    </nav>
+
+ </header>
 <!-- end header -->
 
 <!-- main contain -->
-<main></main>
+<main>
+    
+    <!-- section banner -->
+    <section class="banner" id="banner-section">
+        <div class="banner-title">
+            <h2>Hallo, <span style="color: white;">Rizki Maulana Yulianto</span>. Welcome To My Website!</span></h2>
+            <p>Web Developer & UI/UX Enthusiast</p>
+        </div>
+
+        <div class="banner-carousel">
+            <div class="item">
+                <img src="assets/img/2.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+     <!-- end section banner -->
+
+     <!-- section our profile -->
+    <section class="profile" id="about-section">
+
+        <div class="title">
+            <h2>About Me</h2>
+            <hr>
+        </div>
+
+        <div class="card">
+            <div class="card-item">
+                <div class="card-image">
+                    <img src="/assets/img/profile.jpeg" alt="">
+                </div>
+                <div class="card-contain">
+                    <h1>I'm a Web Developer & UI/UX Enthusiast</h1>
+                    <p class="card-text">Halo, perkenalkan saya Rizki Maulana Yulianto. Saya sangat tertarik dengan Koding, khususnya dalam bidang Web Developer. Selain itu, saya juga memiliki minat pada UI/UX Design. Saya selalu berusaha untuk terus belajar dan mengembangkan keahlian yang saya miliki.</p>
+                    
+                    <div class="card-skill">
+                        <h2>Skill :</h2>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-chevron-right"></i> HTML & CSS</li>
+                            <li><i class="fas fa-chevron-right"></i> PHP</li>
+                            <li><i class="fas fa-chevron-right"></i> CodeIgniter 3</li>
+                            <li><i class="fas fa-chevron-right"></i> Figma</li>
+                            <li><i class="fas fa-chevron-right"></i> Canva</li>
+                        </ul>               
+                    </div>
+
+                    <div class="card-social">
+                        <h2>My Social Media</h2>
+                        <!-- <small>Let's Connect Now!</small> -->
+                        <!-- <hr> -->
+                        <div class="social-list">
+                           <div class="list-item">
+                                <a target="_blank" href="https://rizprogamming.wuaze.com/" class="social-icon">
+                                    <i class="fab fa-chrome"></i> 
+                                </a>
+                                <label for="">
+                                    Website
+                                </label>
+                           </div>
+
+                           <div class="list-item">
+                                <a target="_blank" href="https://dribbble.com/RizkiMaul" class="social-icon">
+                                    <i class="fab fa-dribbble"></i> 
+                                </a>
+                                <label for="">
+                                    Dribble
+                                </label>
+                           </div>
+
+                           <div class="list-item">
+                                <a target="_blank" href="https://www.tiktok.com/@desain.in_?_t=8qEWxQmC6Nz&_r=1" class="social-icon">
+                                    <i class="fab fa-tiktok"></i> 
+                                </a>
+                                <label for="">
+                                    Tiktok
+                                </label>
+                           </div>
+
+                           <div class="list-item">
+                                <a target="_blank" href="https://www.linkedin.com/in/rizki-maulana-yulianto" class="social-icon">
+                                    <i class="fab fa-linkedin-in"></i> 
+                                </a>
+                                <label for="">
+                                    Linkedin
+                                </label>
+                           </div>
+                          
+                        </div>       
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+    </section>
+     <!-- end section our profile -->
+
+     <!-- section-services -->
+
+     <section class="services" id="services-section">
+
+        <div class="title">
+            <h2>Our Services</h2>
+            <hr>
+        </div>
+
+        <div class="content">
+            <div class="content-item">
+                <img class="content-image" src="assets/img/uiuxdesign.jpg" alt="">     
+                <p class="title-content">UI/UX DESIGN</p>      
+            </div>
+            
+            <div class="content-item">
+                <img class="content-image" src="assets/img/webdev.jpg" alt="">     
+                <p class="title-content">WEB DEVELOPER</p>      
+            </div>
+        </div>
+
+     </section>
+    
+    <!-- end section-services -->
+
+
+<!-- section projects -->
+<section class="projects" id="projects-section">
+
+    <div class="title">
+        <h2>Project's</h2>
+        <hr>
+    </div>
+
+    <div class="content-projects">
+        <div class="project-item">
+            <img class="content-image" src="assets/projects-image/project1.jpg" alt="">
+            <p class="title-content">UI/UX MusikinAja App</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam saepe non omnis alias consequatur deserunt eligendi commodi dolores consequuntur!</p>     
+        </div>
+        
+        <div class="project-item">
+            <img class="content-image" src="assets/projects-image/project2.jpg" alt="">     
+            <p class="title-content">Recreate UI Design Lion Parcel Mobile App</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam saepe non omnis alias consequatur deserunt eligendi commodi dolores consequuntur!</p>         
+        </div>
+
+        <div class="project-item">
+            <img class="content-image" src="assets/projects-image/project3.jpg" alt="">     
+            <p class="title-content">Redesign Payment Method Maxim App</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam saepe non omnis alias consequatur deserunt eligendi commodi dolores consequuntur!</p>         
+        </div>
+
+        <div class="project-item">
+            <img class="content-image" src="assets/projects-image/project4.jpg" alt="">     
+            <p class="title-content">UI/UI Design Tour and Travel Mobile App</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam saepe non omnis alias consequatur deserunt eligendi commodi dolores consequuntur!</p>         
+        </div>
+
+        <div class="project-item">
+            <img class="content-image" src="assets/projects-image/project5.jpg" alt="">     
+            <p class="title-content">Website E-Commerce TechnoComp</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam saepe non omnis alias consequatur deserunt eligendi commodi dolores consequuntur!</p>         
+        </div>
+
+        <div class="project-item">
+            <img class="content-image" src="assets/projects-image/project6.jpg" alt="">     
+            <p class="title-content">Website Eko Property</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam saepe non omnis alias consequatur deserunt eligendi commodi dolores consequuntur!</p>         
+        </div>
+
+        <div class="project-item">
+            <img class="content-image" src="assets/projects-image/project7.jpg" alt="">     
+            <p class="title-content">Website W-StudyAnything</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam saepe non omnis alias consequatur deserunt eligendi commodi dolores consequuntur!</p>         
+        </div>
+
+        <div class="project-item">
+            <img class="content-image" src="assets/projects-image/project8.jpg" alt="">     
+            <p class="title-content">Pembuatan Website E-Ticketing Tempat Wisata</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam saepe non omnis alias consequatur deserunt eligendi commodi dolores consequuntur!</p>         
+        </div>
+    </div>
+</section>
+    <!-- end section-projects -->
+    
+    <!-- section message us -->
+    <section class="message" id="message-section">
+
+        <div class="title">
+            <h2>Message Us</h2>
+            <hr>
+        </div>
+
+        <div class="content-message">
+            <div class="form-message">
+                <div class="input">
+                    <label for="name">Nama</label>
+                    <input type="text" placeholder="Masukkan nama lengkap anda." id="name">
+                </div>
+                <div class="input">
+                    <label for="birthdate">Tanggal Lahir</label>
+                    <input type="date" id="birthdate">
+                </div>
+                <div class="input">
+                    <label>Jenis Kelamin</label>
+                    <div class="radio-group">
+                        <div class="radio-check">
+                            <input type="radio" id="male" name="gender" value="Laki-Laki">
+                            <label for="male">Laki-Laki</label>
+                        </div>
+
+                        <div class="radio-check">
+                            <input type="radio" id="female" name="gender" value="Perempuan">
+                            <label for="female">Perempuan</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input">
+                    <label for="message">Pesan</label>
+                    <textarea id="message" placeholder="Masukkan pesan anda." rows="4"></textarea>
+                </div>
+
+                <hr>
+
+                <button class="submit-btn">Submit</button>
+            </div>
+            
+            
+            <div class="output-message">
+                <hr>
+                <h3 class="time">Current Time : </h3>
+                <hr>
+                <div class="display-message">
+                    <p><strong>Nama :</strong> </p>
+                    <p><strong>Tanggal Lahir :</strong> </p>
+                    <p><strong>Jenis Kelamin :</strong> </p>
+                    <p><strong>Pesan :</strong> <br><br> </p>
+                </div>
+            </div>
+        </div>
+
+     </section>
+    <!-- end section message us -->
+
+</main>
 <!-- end main contain -->
 
 <!-- footer -->
- <footer></footer>
+ <footer>
+    <div class="footer-content">
+        <p>Created By Rizki Maulana Yulianto, &copy; 2025</p>
+    </div>
+ </footer>
 <!-- end footer -->
 
 </body>

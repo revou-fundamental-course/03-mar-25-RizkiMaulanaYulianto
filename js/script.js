@@ -1,0 +1,1 @@
+// ini adalah file javascript yang akan dijalankan pada halaman index.html
