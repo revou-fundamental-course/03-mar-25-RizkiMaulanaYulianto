@@ -4,15 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Project Rizki</title>
+    <title>Mini Project</title>
 
     <!-- css -->
-     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- end css -->
 
-    <!-- script -->
-    <script src="js/script.js"></script>    
-    <!-- end script -->
 
     <!-- icon title -->
     <link href="assets/img/logo.jpg" rel="icon">
@@ -34,7 +31,10 @@
             <img src="assets/img/logo.jpg" alt="">
             <p><a href="index.html">RizProgamming</a></p>
         </div>
-       <div class="nav-list">
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav-list">
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="/#about-section">About</a></li>
@@ -42,7 +42,7 @@
                 <li><a href="/#projects-section">Projects</a></li>
                 <li><a href="/#message-section">Message Us</a></li>
             </ul>
-       </div>
+        </div>
     </nav>
 
  </header>
@@ -54,13 +54,20 @@
     <!-- section banner -->
     <section class="banner" id="banner-section">
         <div class="banner-title">
-            <h2>Hallo, <span style="color: white;">Rizki Maulana Yulianto</span>. Welcome To My Website!</span></h2>
+            <h2>Hallo<span style="color: white;" id="name"></span>. Welcome To My Website!</h2>
             <p>Web Developer & UI/UX Enthusiast</p>
         </div>
 
         <div class="banner-carousel">
             <div class="item">
-                <img src="assets/img/2.jpg" alt="">
+                <img id="banner-1" src="assets/img/1.jpg" alt="" class="active">
+                <img id="banner-2" src="assets/img/2.jpg" alt="">
+            </div>
+            <button class="carousel-btn prev">&#10094;</button>
+            <button class="carousel-btn next">&#10095;</button>
+            <div class="carousel-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
             </div>
         </div>
 
@@ -82,7 +89,7 @@
                 </div>
                 <div class="card-contain">
                     <h1>I'm a Web Developer & UI/UX Enthusiast</h1>
-                    <p class="card-text">Halo, perkenalkan saya Rizki Maulana Yulianto. Saya sangat tertarik dengan Koding, khususnya dalam bidang Web Developer. Selain itu, saya juga memiliki minat pada UI/UX Design. Saya selalu berusaha untuk terus belajar dan mengembangkan keahlian yang saya miliki.</p>
+                    <p class="card-text">Halo, perkenalkan saya <span style="color: #205781; font-weight: bold;">Rizki Maulana Yulianto</span>. Saya sangat tertarik dengan Koding, khususnya dalam bidang Web Developer. Selain itu, saya juga memiliki minat pada UI/UX Design. Saya selalu berusaha untuk terus belajar dan mengembangkan keahlian yang saya miliki.</p>
                     
                     <div class="card-skill">
                         <h2>Skill :</h2>
@@ -184,49 +191,49 @@
         <div class="project-item">
             <img class="content-image" src="assets/projects-image/project1.jpg" alt="">
             <p class="title-content">UI/UX MusikinAja App</p>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam saepe non omnis alias consequatur deserunt eligendi commodi dolores consequuntur!</p>     
+            <p class="text">Ini adalah desain UI/UX sebuah aplikasi pemutar music yang saya buat dengan nama MusikinAja</p>     
         </div>
         
         <div class="project-item">
             <img class="content-image" src="assets/projects-image/project2.jpg" alt="">     
             <p class="title-content">Recreate UI Design Lion Parcel Mobile App</p>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam saepe non omnis alias consequatur deserunt eligendi commodi dolores consequuntur!</p>         
+            <p class="text">Ini adalah desain ulang UI aplikasi Lion Parcel. Saya bertugas mendesain ulang halaman Beranda, sebagai bagian dari tugas di kelas yang saya ikuti.</p>         
         </div>
 
         <div class="project-item">
             <img class="content-image" src="assets/projects-image/project3.jpg" alt="">     
             <p class="title-content">Redesign Payment Method Maxim App</p>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam saepe non omnis alias consequatur deserunt eligendi commodi dolores consequuntur!</p>         
+            <p class="text">Hasil redesign aplikasi Maxim, mencakup perubahan pada halaman beranda dan pembayaran, sebagai tugas kelas dengan fokus pada peningkatan UX dan UI.</p>         
         </div>
 
         <div class="project-item">
             <img class="content-image" src="assets/projects-image/project4.jpg" alt="">     
             <p class="title-content">UI/UI Design Tour and Travel Mobile App</p>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam saepe non omnis alias consequatur deserunt eligendi commodi dolores consequuntur!</p>         
+            <p class="text">Desain UI/UX aplikasi JelajahiLiburmu! dibuat untuk memudahkan perencanaan perjalanan. Prosesnya meliputi user flow, wireframe, high-fidelity design, dan prototype. Tugas ini berfokus pada peningkatan UX dan UI sebagai bagian dari kelas yang saya ikuti.</p>         
         </div>
 
         <div class="project-item">
             <img class="content-image" src="assets/projects-image/project5.jpg" alt="">     
             <p class="title-content">Website E-Commerce TechnoComp</p>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam saepe non omnis alias consequatur deserunt eligendi commodi dolores consequuntur!</p>         
+            <p class="text">Website ini dibuat sebagai tugas mata kuliah bertema E-Commerce, dirancang untuk menjual produk elektronik seperti laptop, PC, dan CCTV. Dengan desain responsif, situs ini bertujuan memberikan pengalaman belanja online yang nyaman dan memenuhi kebutuhan teknologi pelanggan.</p>         
         </div>
 
         <div class="project-item">
             <img class="content-image" src="assets/projects-image/project6.jpg" alt="">     
             <p class="title-content">Website Eko Property</p>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam saepe non omnis alias consequatur deserunt eligendi commodi dolores consequuntur!</p>         
+            <p class="text">Website agen properti Harmoni Park Residence Cileungsi adalah platform digital yang menampilkan informasi rumah, harga, lokasi, serta fitur properti. Website ini memudahkan calon pembeli dalam mencari informasi tanpa harus datang langsung serta menyediakan sistem admin untuk mengelola data properti.</p>         
         </div>
 
         <div class="project-item">
             <img class="content-image" src="assets/projects-image/project7.jpg" alt="">     
             <p class="title-content">Website W-StudyAnything</p>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam saepe non omnis alias consequatur deserunt eligendi commodi dolores consequuntur!</p>         
+            <p class="text">W-StudyAnything adalah website katalog penjualan produk digital seperti desain foto, kartu nama, dan undangan pernikahan. Dikembangkan dengan CodeIgniter 3 dan CSS Bootstrap, website ini responsif, ringan, dan memudahkan pelanggan dalam memesan produk digital secara praktis.</p>         
         </div>
 
         <div class="project-item">
             <img class="content-image" src="assets/projects-image/project8.jpg" alt="">     
             <p class="title-content">Pembuatan Website E-Ticketing Tempat Wisata</p>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam saepe non omnis alias consequatur deserunt eligendi commodi dolores consequuntur!</p>         
+            <p class="text">Website ini dibuat sebagai tugas pelatihan untuk menampilkan data tempat wisata di Bogor. Dibangun dengan PHP Native, situs ini memudahkan pengunjung mencari informasi dan memesan tiket secara online.</p>         
         </div>
     </div>
 </section>
@@ -242,36 +249,40 @@
 
         <div class="content-message">
             <div class="form-message">
-                <div class="input">
-                    <label for="name">Nama</label>
-                    <input type="text" placeholder="Masukkan nama lengkap anda." id="name">
-                </div>
-                <div class="input">
-                    <label for="birthdate">Tanggal Lahir</label>
-                    <input type="date" id="birthdate">
-                </div>
-                <div class="input">
-                    <label>Jenis Kelamin</label>
-                    <div class="radio-group">
-                        <div class="radio-check">
-                            <input type="radio" id="male" name="gender" value="Laki-Laki">
-                            <label for="male">Laki-Laki</label>
-                        </div>
-
-                        <div class="radio-check">
-                            <input type="radio" id="female" name="gender" value="Perempuan">
-                            <label for="female">Perempuan</label>
+                
+                <form action="">
+                    <div class="input">
+                        <label for="name">Nama</label>
+                        <input type="text" placeholder="Masukkan nama lengkap anda." id="fullName" required>
+                    </div>
+                    <div class="input">
+                        <label for="birthdate">Tanggal Lahir</label>
+                        <input type="date" id="birthdate" required>
+                    </div>
+                    <div class="input">
+                        <label>Jenis Kelamin</label>
+                        <div class="radio-group">
+                            <div class="radio-check">
+                                <input type="radio" id="male" name="gender" value="Laki-Laki">
+                                <label for="male">Laki-Laki</label>
+                            </div>
+    
+                            <div class="radio-check">
+                                <input type="radio" id="female" name="gender" value="Perempuan">
+                                <label for="female">Perempuan</label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="input">
-                    <label for="message">Pesan</label>
-                    <textarea id="message" placeholder="Masukkan pesan anda." rows="4"></textarea>
-                </div>
-
-                <hr>
-
-                <button class="submit-btn">Submit</button>
+                    <div class="input">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" placeholder="Masukkan pesan anda." rows="4" required></textarea>
+                    </div>
+                    
+                    <hr>
+                    
+                     <button class="submit-btn">Submit</button>
+                     
+                    </form>
             </div>
             
             
@@ -301,6 +312,10 @@
     </div>
  </footer>
 <!-- end footer -->
+
+   <!-- script -->
+   <script src="/js/script.js"></script>    
+   <!-- end script -->
 
 </body>
 
