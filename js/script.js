@@ -13,7 +13,7 @@ function replaceName() {
 
 // Panggil fungsi saat halaman dimuat
 document.addEventListener('DOMContentLoaded', function() {
-    replaceName();
+    // replaceName();
 
     const form = document.querySelector('form');
     const displayMessage = document.querySelector('.display-message');
@@ -73,10 +73,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Debugging: Cek apakah nilai diambil dengan benar
-        console.log('Nama:', userName);
-        console.log('Tanggal Lahir:', birthdate);
-        console.log('Jenis Kelamin:', gender);
-        console.log('Pesan:', message);
+        // console.log('Nama:', userName);
+        // console.log('Tanggal Lahir:', birthdate);
+        // console.log('Jenis Kelamin:', gender);
+        // console.log('Pesan:', message);
 
         // Format tanggal lahir
         const formattedBirthdate = new Date(birthdate).toLocaleDateString('id-ID', {
