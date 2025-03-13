@@ -13,7 +13,7 @@ function replaceName() {
 
 // Panggil fungsi saat halaman dimuat
 document.addEventListener('DOMContentLoaded', function() {
-    replaceName();
+    // replaceName();
 
     const form = document.querySelector('form');
     const displayMessage = document.querySelector('.display-message');
