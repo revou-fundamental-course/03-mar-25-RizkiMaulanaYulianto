@@ -1,30 +1,76 @@
-// function replaceName() {
-//     let name = prompt('Hallo, Selamat Datang di Website Kami! \n\nSilahkan masukkan nama Anda :');
+function replaceName() {
+    let name = prompt('Hallo, Selamat Datang di Website Kami! \n\nSilahkan masukkan nama Anda :');
     
-//     if (name === null || name.trim() === '') {
-//         alert('Nama tidak boleh kosong!');
-//         replaceName(); // Panggil kembali fungsi jika nama kosong
-//     } else {
-//         document.getElementById('name').innerHTML = name.trim();
-//     }
-// }
+    if (name === null || name.trim() === '') {
+        alert('Nama tidak boleh kosong!');
+        
+        // Panggil kembali fungsi jika nama kosong
+        replaceName();
+    } else {
+        document.getElementById('name').innerHTML = " " + name.trim();
+    }
+}
 
 // Panggil fungsi saat halaman dimuat
 document.addEventListener('DOMContentLoaded', function() {
-    // replaceName();
+    replaceName();
 
     const form = document.querySelector('form');
     const displayMessage = document.querySelector('.display-message');
     const timeDisplay = document.querySelector('.time');
 
+    // Fungsi untuk menampilkan error
+    function showError(elementId, message) {
+        const errorElement = document.getElementById(elementId);
+        errorElement.textContent = message;
+    }
+
+    // Fungsi untuk menghapus error
+    function clearErrors() {
+        const errorElements = document.querySelectorAll('.error');
+        errorElements.forEach(element => element.textContent = '');
+    }
+
     form.addEventListener('submit', function (e) {
         e.preventDefault();
+        
+        // Bersihkan error sebelumnya
+        clearErrors();
 
-        // Ambil nilai dari form dengan nama variabel yang berbeda
-        const userName = document.getElementById('fullName').value; 
+        // Ambil nilai dari form
+        const userName = document.getElementById('fullName').value.trim(); 
         const birthdate = document.getElementById('birthdate').value;
         const gender = document.querySelector('input[name="gender"]:checked')?.value || '';
-        const message = document.getElementById('message').value;
+        const message = document.getElementById('message').value.trim();
+
+        // Flag untuk mengecek validasi
+        let isValid = true;
+
+        // Validasi input
+        if (!userName) {
+            showError('nameError', 'Nama harus diisi!');
+            isValid = false;
+        }
+
+        if (!birthdate) {
+            showError('birthdateError', 'Tanggal Lahir harus diisi!');
+            isValid = false;
+        }
+
+        if (!gender) {
+            showError('genderError', 'Jenis Kelamin harus dipilih!');
+            isValid = false;
+        }
+
+        if (!message) {
+            showError('messageError', 'Pesan harus diisi!');
+            isValid = false;
+        }
+
+        // Jika ada error, hentikan proses submit
+        if (!isValid) {
+            return;
+        }
 
         // Debugging: Cek apakah nilai diambil dengan benar
         console.log('Nama:', userName);

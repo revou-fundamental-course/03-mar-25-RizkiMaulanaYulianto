@@ -101,7 +101,7 @@ body {
     z-index: 9999;
     position: absolute;
     width: 100%;
-    top: 35%;
+    top: 20%;
     line-height: 40px;
 }
 
@@ -466,6 +466,7 @@ svg {
     align-items: center;
     width: 100%;
     margin-bottom: 30px;
+    position: relative;
 }
 
 .input input[type="text"], .input input[type="date"], .input textarea {
@@ -489,6 +490,11 @@ svg {
     padding-right: 10px;
     white-space: nowrap;
     position: relative;
+}
+
+.input small {
+    /* border: 1px solid red; */
+    width: max-content;
 }
 
 /* Menambahkan tanda `:` */
@@ -525,6 +531,16 @@ svg {
 
 .submit-btn:hover {
     background-color: #2d6a9f;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 15px;
+    display: block;
+    position: relative;
+    margin-left: 130px;
+    font-weight: bold;
 }
 
 .output-message  {
@@ -599,6 +615,11 @@ svg {
 
     .banner-title h2 {
         font-size: 20px;
+    }
+
+    .banner-title p {
+        text-align: justify;
+        line-height: 2.4;
     }
 
     .banner-carousel {
@@ -834,7 +855,7 @@ svg {
     .nav-list.active {
         display: block;
         max-height: 300px;
-        margin-top: 8px;
+        margin-top: 8px;    
     }
 
     .nav-list ul {
@@ -861,14 +882,19 @@ svg {
     }
 
     .banner-title {
-        padding: 0px 15px;
-        text-align: center;
+        padding: 0px 65px;
+        text-align: justify;
     }
 
     .banner-title h2 {
         font-size: 15px;
         line-height: 1.4;
     }
+
+    .banner-title p {
+        font-size: 12px;
+        line-height: 1.4;
+    }   
 
     .banner-carousel {
         height: 250px;

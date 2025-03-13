@@ -55,7 +55,8 @@
     <section class="banner" id="banner-section">
         <div class="banner-title">
             <h2>Hallo<span style="color: white;" id="name"></span>. Welcome To My Website!</h2>
-            <p>Web Developer & UI/UX Enthusiast</p>
+            <!-- <p>Web Developer & UI/UX Enthusiast</p> -->
+             <p>Website ini merupakan website portofolio yang saya buat sebagai bagian dari tugas dalam mini course yang diadakan oleh <strong>RevoU</strong>, menampilkan keahlian, dan project yang pernah saya buat. Dengan desain modern dan user-friendly, saya berharap dapat memberikan pengalaman yang informatif dan menyenangkan.</p>
         </div>
 
         <div class="banner-carousel">
@@ -253,11 +254,13 @@
                 <form action="">
                     <div class="input">
                         <label for="name">Nama</label>
-                        <input type="text" placeholder="Masukkan nama lengkap anda." id="fullName" required>
+                        <input type="text" placeholder="Masukkan nama lengkap anda." id="fullName">
+                        <small class="error" id="nameError"></small>
                     </div>
                     <div class="input">
                         <label for="birthdate">Tanggal Lahir</label>
-                        <input type="date" id="birthdate" required>
+                        <input type="date" id="birthdate">
+                        <small class="error" id="birthdateError"></small>
                     </div>
                     <div class="input">
                         <label>Jenis Kelamin</label>
@@ -272,10 +275,12 @@
                                 <label for="female">Perempuan</label>
                             </div>
                         </div>
+                        <small class="error" id="genderError"></small>
                     </div>
                     <div class="input">
                         <label for="message">Pesan</label>
-                        <textarea id="message" placeholder="Masukkan pesan anda." rows="4" required></textarea>
+                        <textarea id="message" placeholder="Masukkan pesan anda." rows="4"></textarea>
+                        <small class="error" id="messageError"></small>
                     </div>
                     
                     <hr>
