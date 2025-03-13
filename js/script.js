@@ -1,5 +1,5 @@
 function replaceName() {
-    let name = prompt('Hallo, Selamat Datang di Website Kami! \n\nSilahkan masukkan nama Anda :');
+    let name = prompt('Hallo, Selamat Datang di Website RizProgamming! \n\nSilahkan masukkan nama Anda :');
     
     if (name === null || name.trim() === '') {
         alert('Nama tidak boleh kosong!');
@@ -87,10 +87,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Dapatkan waktu saat ini dengan format yang diinginkan
         const now = new Date();
-        const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
         const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-        const formattedTime = `${days[now.getDay()]} ${months[now.getMonth()]} ${now.getDate()} ${now.getFullYear()} ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')} GMT+0100`;
+        const formattedTime = `${days[now.getDay()]}, ${months[now.getMonth()]} ${now.getDate()}. ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')} WIB`;
 
         // Update waktu
         timeDisplay.textContent = `Current time : ${formattedTime}`;
